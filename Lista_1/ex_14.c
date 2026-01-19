@@ -1,31 +1,31 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct tipoBanda{
+typedef struct tipoMusica{
     char nome[80];
     int ano;
-}tipoBanda;
+}tipoMusica;
 
 
-typedef struct tipoShow{
+typedef struct tipoBanda{
     char nome[80];
     int qtd;
-    tipoBanda bandas[100];
-} tipoShow;
+    tipoMusica musicas[100];
+} tipoBanda;
 
-void pesquisarNomeBanda(char pesquisa[80], tipoShow shows[50], int n){
+void pesquisarNomeMusica(char pesquisa[80], tipoBanda Bandas[50], int n){
     int achou=0;
     for(int i=0; i<n; i++){
-        for(int j=0;j<shows[i].qtd;j++){
-            if(strcmp(pesquisa,shows[i].bandas[j].nome) == 0){
-                printf("%s : ano %d\n", shows[i].nome, shows[i].bandas[j].ano);
+        for(int j=0;j<Bandas[i].qtd;j++){
+            if(strcmp(pesquisa,Bandas[i].musicas[j].nome) == 0){
+                printf("%s : ano %d\n", Bandas[i].nome, Bandas[i].musicas[j].ano);
                 achou=1;
             }
         }
         
     }
     if(achou==0){
-        printf("Banda nao cadastrada\n");
+        printf("Musica nao cadastrada\n");
     }
 
 }

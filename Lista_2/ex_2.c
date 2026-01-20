@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Pares_caracteres(char *p, int i){
+void Pares_caracteres(char *p, int i){//ponteiro mas poderia ser o char normal como na 1
     if(*p == '\0'){
         printf("%d\n",i);
         return;

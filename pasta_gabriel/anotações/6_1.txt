@@ -1,0 +1,17 @@
+lembrando que todo o conteudo dos slides ta no github dele lboaventura/EDA1...
+
+Slide 1
+
+compilçãode  de codigos 
+declaração de variaveis 
+diferença entre string e char's (vetor de chars)
+função printf pra exibir variaveis modificadores de variaveis na string ex: %d ...   
+tabela ascII e sua equivalencia 
+
+scanf -> leituras de dados
+ex:scnaf("%d", &idade)
+
+função getchar
+
+logica de programação basica e sintaxe do C 
+

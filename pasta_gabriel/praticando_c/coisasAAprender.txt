@@ -1,0 +1,4 @@
+tipos de String e como representalas
+%n %d, é igual ao java
+printf("%n", variavel) ->> a variavel vai assumir a posição do %n ali
+n -> String
